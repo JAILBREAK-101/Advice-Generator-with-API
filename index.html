@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./advice.css">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <style>
+    .attribution {
+      font-size: .7rem;
+      margin-bottom: 1rem;
+      color: aliceblue;
+    }
+
+    .attribution a {
+      color: hsl(0, 0%, 97%);
+      font-weight: 600;
+      transition: text .2s;
+    }
+
+    .attribution a:nth-of-type(2) {
+      color: hsl(0, 91%, 36%);
+      color: lightgreen;
+    }
+
+    .attribution a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="advice-container" id="advice-con">
+      <section class="id">
+        <p>Advice #<span></span></p>
+      </section>
+
+      <section class="quote">
+        <p>"<span>Please click on dice to generate random advice</span>"</p>
+      </section>
+
+      <section class="footer">
+        <img src="./images/pattern-divider-desktop.svg" alt="">
+      </section>
+      <button class="random"><img src="./images/icon-dice.svg" alt=""></button>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/JAILBREAK-101">JailBreak</a>.
+    </div>
+  </main>
+  <script src="for_project.js"></script>
+
+</body>
+
+</html>

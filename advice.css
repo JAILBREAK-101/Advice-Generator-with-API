@@ -1,0 +1,81 @@
+:root {
+    /* Colors for the advice generator. */
+    --main-bg: hsl(218, 23%, 16%);
+    --advice-card: hsl(217, 19%, 24%);
+    --advice-quote: hsl(193, 38%, 86%);
+    --advice-id-btn: hsl(150, 100%, 66%);
+    --advice-id-btn-hover: hsl(150, 100%, 66%); 
+    /* rgb(242, 243, 243, .7); */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 28px;
+}
+
+body {
+    margin: 0;
+    background: var(--main-bg);
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
+
+main,
+.advice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main {
+    min-height: 100%;
+    gap: 5rem;
+}
+
+.advice-container {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--advice-card);
+    text-align: center;
+    position: relative;
+}
+
+.id {
+    color: var(--advice-id-btn);
+    font-size: .5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.quote {
+    max-width: 20ch;
+    color: var(--advice-quote);
+    line-height: 1.5;
+}
+
+.footer {
+    margin-bottom: 1rem;
+}
+
+button.random {
+    border: 1px solid transparent;
+    background: var(--advice-id-btn);
+    padding: .6rem;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: -30px;
+    transition: .1s box-shadow ease-in-out;
+}
+
+button.random:hover {
+    box-shadow: 0 0 25px 0 var(--advice-id-btn-hover);
+}
